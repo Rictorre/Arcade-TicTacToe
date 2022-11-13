@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    
+    <script src="app.js"></script> 
+    
+    <h1 id="title">Tic-Tac-Toe</h1>
+</head>
+    <h2 id="inst"> Instructions</h2>
+        <p id="instructions"> Player 1 begin game by clicking a box of your choice, following by Player 2's choice of box until there is a winner!</p>
+    <div class= "names" id="name1">   
+    <h2 id="playerName"> Player 1 </h2>
+    
+    <div id="divSetPlayerName">
+      <input   type="text"  placeholder="Enter player name" id="playerNameInput" />
+      <button id="player1Button" onclick="setPlayerName();">Start</button>
+    </div>
+    
+</div>
+    <div class = "names" id="name2">
+    <h2 id="player2Name"> Player 2 </h2>
+
+    <div  id="divSetPlayer2Name">
+      <input type="text"  placeholder="Enter player name" id="player2NameInput"/>
+      <button id="player2Button" onclick="setPlayer2Name();">Start</button>
+    </div>
+</div>
+ <p id="vs">Vs</p>
+
+<body>
+    <br>
+    <div class="board">
+        <input class="boxes" type="text" id="cell0" onclick= "myfunc_3(); myfunc();" >
+   
+        <input class="boxes" type="text" id="cell1" onclick= "myfunc_4(); myfunc();" >
+   
+        <input class="boxes" type="text" id="cell2" onclick= "myfunc_5(); myfunc();" >
+        <br><br>
+   
+        <input class="boxes" type="text" id="cell3" onclick= "myfunc_6(); myfunc();" >
+               
+        <input class="boxes" type="text" id="cell4" onclick= "myfunc_7(); myfunc();" >
+   
+        <input class="boxes" type="text" id="cell5" onclick= "myfunc_8(); myfunc();" >
+        <br><br>
+   
+        <input class="boxes" type="text" id="cell6" onclick= "myfunc_9(); myfunc();" >
+   
+        <input class="boxes" type="text" id="cell7" onclick= "myfunc_10();myfunc();" >
+   
+        <input class="boxes" type="text" id="cell8" onclick= "myfunc_11();myfunc();" >
+
+        <br></br>
+    </div>
+    <button id="restart" onclick="myfunc_2()">
+        Play Again
+    </button>
+    <p id="print"> </p>
+    
+  </body>
+  <footer> </footer>
+
